@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="jumbotron">
+    <h1 class="display-4">Bienvenue sur Book Scraper!</h1>
+    <p class="lead">Une application web pour visualiser les données de 100 livres collectées par notre scraper.</p>
+    <hr class="my-4">
+    <p>Explorez notre collection de livres et découvrez de nouvelles lectures!</p>
+    <a class="btn btn-primary btn-lg" href="{{ url_for('main.books') }}" role="button">Voir les livres</a>
+</div>
+
+<div class="row mt-5">
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Nombre de livres</h5>
+                <p class="card-text display-4 text-center">100</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Fonctionnalités</h5>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Visualisation des livres</li>
+                    <li class="list-group-item">Filtrage par prix</li>
+                    <li class="list-group-item">API pour accéder aux données</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">À propos</h5>
+                <p class="card-text">Cette application présente les données collectées par un scraper Python qui extrait des informations sur les livres.</p>
+                <a href="https://github.com/votre-compte/book_scraper" class="btn btn-outline-primary">GitHub</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

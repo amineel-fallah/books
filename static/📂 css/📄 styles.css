@@ -1,0 +1,48 @@
+/* Custom styles for Book Scraper application */
+
+.jumbotron {
+    padding: 2rem;
+    background-color: #f8f9fa;
+    border-radius: 0.3rem;
+    margin-bottom: 2rem;
+}
+
+.card {
+    transition: transform 0.3s;
+    margin-bottom: 1rem;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .jumbotron h1 {
+        font-size: 2rem;
+    }
+}
+
+/* Book cards styling */
+#cardsView .card {
+    height: 100%;
+}
+
+/* Improve table responsiveness */
+.table-responsive {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* Price styling */
+.price {
+    font-weight: bold;
+    color: #28a745;
+}

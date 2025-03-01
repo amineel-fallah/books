@@ -1,0 +1,6 @@
+Nombre total de livres: 100
+Prix moyen: £34.56
+Prix médian: £34.78
+Prix minimum: £10.16
+Prix maximum: £58.11
+Écart-type des prix: £14.64
